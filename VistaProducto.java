@@ -1,6 +1,6 @@
 /**
  * @author Pedro José Bacab Pech
- * @Anahi del Rosario Dzul Can
+ * @author Anahi del Rosario Dzul Can
  */
 
 import java.util.Scanner;
