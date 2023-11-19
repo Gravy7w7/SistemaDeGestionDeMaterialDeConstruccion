@@ -2,6 +2,8 @@
  * Clase Direccion que es usada por la clase Cliente
  * @author Pedro Jose Bacab Pech
  */
+
+
 public class Direccion {
 
     private String calle;
@@ -12,7 +14,6 @@ public class Direccion {
     private String referencia;
 
     //setter y getter
-
 
     public void setCalle(String calle) {
         this.calle = calle;
