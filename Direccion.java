@@ -68,6 +68,8 @@ public class Direccion {
      */
     public String toString(){
         return"\nCalle: "+calle
+                +"\nCruzamiento: "+cruzamientos
+                +"\nNúmero de casa: "+numeroCasa
                 +"\nColonia: "+colonia
                 +"\nCiudad: "+ciudad
                 +"\nReferencia: "+referencia;
