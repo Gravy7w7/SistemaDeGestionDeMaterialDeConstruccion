@@ -4,7 +4,9 @@
  */
 public class Direccion {
 
-    private int calle;
+    private String calle;
+    private String cruzamientos;
+    private String numeroCasa;
     private String colonia;
     private String ciudad;
     private String referencia;
@@ -12,8 +14,16 @@ public class Direccion {
     //setter y getter
 
 
-    public void setCalle(int calle) {
+    public void setCalle(String calle) {
         this.calle = calle;
+    }
+
+    public void setCruzamientos(String cruzamientos) {
+        this.cruzamientos = cruzamientos;
+    }
+
+    public void setNumeroCasa(String numeroCasa) {
+        this.numeroCasa = numeroCasa;
     }
 
     public void setColonia(String colonia) {
@@ -28,8 +38,16 @@ public class Direccion {
         this.referencia = referencia;
     }
 
-    public int getCalle() {
+    public String getCalle() {
         return calle;
+    }
+
+    public String getCruzamientos() {
+        return cruzamientos;
+    }
+
+    public String getNumeroCasa() {
+        return numeroCasa;
     }
 
     public String getColonia() {
