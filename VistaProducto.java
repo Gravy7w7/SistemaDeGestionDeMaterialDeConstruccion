@@ -8,12 +8,20 @@ public class VistaProducto {
 
     Scanner sc = new Scanner(System.in);
 
+    /**
+     * Metodo para pedir el nombre que regresa un String
+     * @return sc.nexLine(); Lo que el usuario escriba en la siguiente linea
+     */
     public String pedirNombreP(){
         sc.nextLine();
         System.out.println("\nIngrese el nombre del prodcuto: ");
         return sc.nextLine();
     }
 
+    /**
+     * Metodo para seleccionar la categoria del producto
+     * @return sc.nextInt(); Lo que el usuario escriba en la siguiente linea
+     */
     public int pedirCategoria(){
         System.out.println("Ingrese el nombre de alguna de las siguiente categorías: ");
         System.out.println("[1]HERRAMIENTAS");
@@ -23,27 +31,43 @@ public class VistaProducto {
         return sc.nextInt();
     }
 
+    /**
+     * Metodo para pedir el precio del producto
+     * @return sc.nextInt(); Lo que el usuario escriba en la siguiente linea
+     */
     public int pedirPrecio(){
         System.out.println("Ingrese el precio del prodcuto: ");
         return sc.nextInt();
     }
-
+    /**
+     * Metodo para pedir la descripción del producto
+     * @return sc.nextLine(); Lo que el usuario escriba en la siguiente linea
+     */
     public String pedirDescripcion(){
         sc.nextLine();
         System.out.println("Ingrese la descripción del producto: ");
         return sc.nextLine();
     }
-
+    /**
+     * Metodo para pedir la cantidad del producto
+     * @return sc.nextInt(); Lo que el usuario escriba en la siguiente linea
+     */
     public int pedirStock(){
         System.out.println("Ingrese el stock del producto ingresado: ");
         return sc.nextInt();
     }
-
+    /**
+     * Metodo para pedir el código de identificación del producto
+     * @return sc.nextInt(); Lo que el usuario escriba en la siguiente linea
+     */
     public int pedirCodigo(){
         System.out.println("Ingrese el código del producto: ");
         return sc.nextInt();
     }
-
+    /**
+     * Metodo que muestra el menu para la modificación de un producto existente
+     * @return sc.nextInt(); Lo que el usuario escriba en la siguiente linea
+     */
     public int menuModificarProducto(){
         System.out.println("**********Bienvenido al menú de modificación de productos**********");
         System.out.println("Ingrese el número de la opción con la que desee trabajar");
@@ -54,7 +78,10 @@ public class VistaProducto {
         System.out.println("[0]Salir del programa");
         return sc.nextInt();
     }
-
+    /**
+     * Metodo que muestra el menú para las opciones del producto
+     * @return sc.nextInt(); Lo que el usuario escriba en la siguiente linea
+     */
     public int menuProducto(){
         try {
 
