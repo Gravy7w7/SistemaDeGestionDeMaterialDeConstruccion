@@ -143,7 +143,7 @@ public class ControladorProveedor implements Interfaz1 {
             String b = listaProveedores.get(i).getTelefono();
 
             if(a.equals(b)){
-                listaProveedores.get(i).setNombreProducto(vista.pedirNombreProveedor());
+                listaProveedores.get(i).setNombreProveedores(vista.pedirNombreProveedor());
                 vista.modificadoConExito();
                 encontrado=true;
                 break;
