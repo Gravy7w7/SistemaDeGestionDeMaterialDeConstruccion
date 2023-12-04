@@ -152,7 +152,7 @@ public class ControladorCliente implements Interfaz1{
             String b = listaClientes.get(i).getTelefono();
 
             if (a.equals(b)) {
-                listaClientes.get(i).setNombre(vista.pedirApellido());
+                listaClientes.get(i).setApellido(vista.pedirApellido());
                 vista.ActualizacionCorrecta();
                 encontrado = true;
                 break;
@@ -175,7 +175,7 @@ public class ControladorCliente implements Interfaz1{
             String b = listaClientes.get(i).getTelefono();
 
             if (a.equals(b)) {
-                listaClientes.get(i).setNombre(vista.pedirTelefono());
+                listaClientes.get(i).setTelefono(vista.pedirTelefono());
                 vista.nuevoTelefono();
                 vista.ActualizacionCorrecta();
                 encontrado = true;
@@ -270,7 +270,7 @@ public class ControladorCliente implements Interfaz1{
             if (a.equals(b)) {
                 Direccion direccion = cliente.getDireccion();
                 String nuevoCruzamiento = vista.pedirCruzamientos();
-                direccion.setCalle(nuevoCruzamiento);
+                direccion.setCruzamientos(nuevoCruzamiento);
                 vista.ActualizacionCorrecta();
                 encontrado = true;
                 break;
@@ -320,7 +320,7 @@ public class ControladorCliente implements Interfaz1{
             if (a.equals(b)) {
                 Direccion direccion = cliente.getDireccion();
                 String NuevaColonia = vista.pedirColonia();
-                direccion.setNumeroCasa(NuevaColonia);
+                direccion.setColonia(NuevaColonia);
                 vista.ActualizacionCorrecta();
                 encontrado = true;
                 break;
@@ -371,7 +371,7 @@ public class ControladorCliente implements Interfaz1{
             if (a.equals(b)) {
                 Direccion direccion = cliente.getDireccion();
                 String Nuevareferencia = vista.pedirReferencia();
-                direccion.setCiudad(Nuevareferencia);
+                direccion.setReferencia(Nuevareferencia);
                 vista.ActualizacionCorrecta();
                 encontrado = true;
                 break;
