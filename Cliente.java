@@ -1,23 +1,25 @@
+import java.io.Serializable;
+
 /**
  * Clase Cliente
- * @author Pedro Jose Bacab Pech
+ * @author Anahi del Rosario Dzul Can
  */
-public class Cliente {
+public class Cliente implements Serializable {
     protected String nombre;
     protected String apellido;
-    protected int telefono;
+    protected String telefono;
     protected int frecuencia;
     protected Direccion direccion;
 
     /**
      * Constructor
-     * @param nombre que recibe de Controlador
-     * @param apellido que recive de Controlador
-     * @param telefono que recibe de Controlador
+     *
+     * @param nombre     que recibe de Controlador
+     * @param apellido   que recive de Controlador
+     * @param telefono   que recibe de Controlador
      * @param frecuencia que recibe de Controlador
-     * @param direccion que recibe de Controlador
      */
-    public Cliente(String nombre,String apellido , int telefono, int frecuencia, Direccion direccion){
+    public Cliente(String nombre,String apellido , String telefono, int frecuencia, Direccion direccion){
         this.nombre=nombre;
         this.apellido=apellido;
         this.telefono=telefono;
@@ -32,7 +34,7 @@ public class Cliente {
     }
 
     public void setApellido(String apellido) {this.apellido = apellido;}
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
@@ -50,7 +52,7 @@ public class Cliente {
 
     public String getApellido() {return apellido;}
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 

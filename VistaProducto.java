@@ -23,7 +23,7 @@ public class VistaProducto {
      * @return sc.nextInt(); Lo que el usuario escriba en la siguiente linea
      */
     public int pedirCategoria(){
-        System.out.println("Ingrese el nombre de alguna de las siguiente categorías: ");
+        System.out.println("Ingrese el numero de alguna de las siguiente categorías: ");
         System.out.println("[1]HERRAMIENTAS");
         System.out.println("[2]LADRILLOS");
         System.out.println("[3]POLVOS");
@@ -75,7 +75,7 @@ public class VistaProducto {
         System.out.println("[2]Modificar el precio de un producto");
         System.out.println("[3]Modificar la categoría de un producto");
         System.out.println("[4]Modificar el stock de un producto");
-        System.out.println("[0]Salir del programa");
+        System.out.println("[0]Volver al menú de producto");
         return sc.nextInt();
     }
     /**
@@ -91,7 +91,8 @@ public class VistaProducto {
             System.out.println("[1]Agregar un Producto");
             System.out.println("[2]Modificar un producto");
             System.out.println("[3]Borrar un producto");
-            System.out.println("[0]Salir del programa");
+            System.out.println("[4]Buscar un producto");
+            System.out.println("[0]Regresar al menú principal");
             return sc.nextInt();
         }catch (Exception e){
             System.out.println("Excepción encontrada, se terminará el programa: "+ e);
@@ -99,5 +100,46 @@ public class VistaProducto {
         }
     }
 
+    /**
+     * Metodo que se ejecuta en caso de que el producto no exista o el código este incorrecto
+     */
+    public void noExisteProducto(){
+        System.out.println("No existe producto con ese código.");
+    }
+
+    /**
+     * Método que imprime que la opción ingresada no es válida
+     */
+    public void opcionNoValida(){
+        System.out.println("Opción no válida, intenta de nuevo.");
+    }
+
+    /**
+     * Método que se encarga de avisar que estás regresando al menú principal
+     */
+    public void volviendoMenuPrincipal(){
+        System.out.println("Volviendo al menú princiapl.");
+    }
+
+    /**
+     * Método que se encargar de avisar que el producto ha sido agregado de forma correcta
+     */
+    public void agregadoConExito(){
+        System.out.println("Producto agregado con éxito :)");
+    }
+
+    /**
+     * Método que se encargar de avisar que el producto ha sido borrado de manera correcta
+     */
+    public void borradoConExito(){
+        System.out.println("Borrado con éxito.");
+    }
+
+    /**
+     * Método que se encarga de avisar que el producto ha sido modificado con éxito
+     */
+    public void modificadoConExito(){
+        System.out.println("Modificado con éxito");
+    }
 
 }

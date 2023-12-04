@@ -1,10 +1,13 @@
+import java.io.Serializable;
+
 /**
  * Clase proveedores
  * @author Anahi del Rosario Dzul Can
+ * @author Pedro José Bacab Pech
  */
-public class Proveedores {
+public class Proveedor implements Serializable {
     private String NombreProveedores;
-    private int Telefono;
+    private String Telefono;
     private String NombreProducto;
     private int PrecioMayoreo;
     private int Cantidad;
@@ -17,7 +20,7 @@ public class Proveedores {
      * @param PrecioMayoreo recibido por el programador
      * @param Cantidad recibido por el programador
      */
-    public Proveedores(String NombreProveedores, int Telefono, String NombreProducto, int PrecioMayoreo, int Cantidad){
+    public Proveedor(String NombreProveedores, String Telefono, String NombreProducto, int PrecioMayoreo, int Cantidad){
         this.NombreProveedores = NombreProveedores;
         this.Telefono = Telefono;
         this.NombreProducto = NombreProducto;
@@ -33,11 +36,11 @@ public class Proveedores {
         NombreProveedores = nombreProveedores;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return Telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         Telefono = telefono;
     }
 
@@ -65,4 +68,17 @@ public class Proveedores {
         Cantidad = cantidad;
     }
 
+    /**
+     * Método toString para imprimir las variables
+     * @return los valores asignados
+     *
+     */
+    public String toString(){
+        return
+                "\nNombre: "+NombreProveedores
+                +"\nTeléfono: "+Telefono
+                +"\nNombre del producto: "+NombreProducto
+                + "\nPrecio: "+PrecioMayoreo
+                +"\nCantidad: "+Cantidad;
+    }
 }

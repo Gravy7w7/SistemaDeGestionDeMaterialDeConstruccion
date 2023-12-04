@@ -1,8 +1,10 @@
+import java.io.Serializable;
+
 /**
  * Clase producto
  * @author Anahi del Rosario Dzul Can
  */
-public class Producto {
+public class Producto implements Serializable {
 
     protected int Categoria;
     protected String NombreProducto;

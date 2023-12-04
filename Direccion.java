@@ -1,10 +1,12 @@
+import java.io.Serializable;
+
 /**
  * Clase Direccion que es usada por la clase Cliente
- * @author Pedro Jose Bacab Pech
+ * @author Anahi del Rosario Dzul Can
  */
 
 
-public class Direccion {
+public class Direccion implements Serializable {
 
     private String calle;
     private String cruzamientos;
@@ -12,6 +14,24 @@ public class Direccion {
     private String colonia;
     private String ciudad;
     private String referencia;
+
+    /**
+     * Constructor que recibe sus datos a través de la creación del cliente
+     * @param calle que recibe de Cliente
+     * @param cruzamientos que recibe de Cliente
+     * @param numeroCasa que recibe de Cliente
+     * @param colonia que recibe de Cliente
+     * @param ciudad que recibe de Cliente
+     * @param referencia que recibe de Cliente
+     */
+    public Direccion(String calle, String cruzamientos, String numeroCasa, String colonia, String ciudad, String referencia){
+        this.calle=calle;
+        this.cruzamientos=cruzamientos;
+        this.numeroCasa=numeroCasa;
+        this.colonia=colonia;
+        this.ciudad=ciudad;
+        this.referencia=referencia;
+    }
 
     //setter y getter
 
@@ -64,7 +84,7 @@ public class Direccion {
     }
 
     /**
-     * Metodo toString para imprimir las variables
+     * Método toString para imprimir las variables
      * @return los valores asignados respectivamente
      */
     public String toString(){
